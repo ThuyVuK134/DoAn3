@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a094ba0435d44612819827c3b8495346" Name="Diagram1">
+        <EntityTypeShape EntityType="MyPham_ShopModel.ChiTietHDN" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.ChiTietHDX" Width="1.5" PointX="10.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.GioHang" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.HoaDonNhap" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.HoaDonXuat" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.KhachHang" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.LoaiSP" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.NhanVien" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.SanPham" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyPham_ShopModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_ChiTietHDN_HoaDonNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_ChiTietHDX_HoaDonXuat" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_GioHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_GioHang_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_HoaDonNhap_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_HoaDonNhap_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_HoaDonXuat_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_HoaDonXuat_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_SanPham_LoaiSP" ManuallyRouted="false" />
+        <AssociationConnector Association="MyPham_ShopModel.FK_SanPham_NhaCungCap" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

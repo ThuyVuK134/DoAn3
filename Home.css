@@ -1,0 +1,168 @@
+﻿body {
+   
+}
+#menudoc{
+   
+    width:270px;
+      min-height:900px;
+      float:left;
+      border-right:0px dashed #dbdbdb;
+      margin-left:100px;
+      margin-bottom:20px;
+     
+    
+}
+#sanpham{
+    width:900px;
+   min-height:800px;
+    float:left;
+   
+}
+
+/*.boder{
+    padding:10px;
+    color:darkcyan;
+    border-style:dotted solid;
+    border-right-style:dotted solid;
+}*/
+#chitiet{
+    width:785px;
+      height:450px;
+      float:left;
+      margin-left:90px;
+      padding-top:-50px;
+
+}
+.chitietsp{
+    width:590px;
+    min-height:500px;
+    float:left;
+    margin-left:20px;
+}
+#QuangCao{
+    width:350px;
+    min-height:450px;
+    float:left;
+    margin-left:20px;
+}
+#themSPkhac{
+    width:1260px;
+      height:950px;
+      float:left;
+      margin-left:20px;
+      padding-top:-50px;
+}
+
+.product_detail_box {
+    /*text-align:justify;*/
+    float:left;
+    padding-top:10px;
+    margin:5px 5px 5px ;
+    /*clear:both;*/
+}
+.product_image {
+    float:left;
+    /*width:100px;
+    height:100px;*/
+}
+.product_detail {
+    width:400px;
+    float:right;
+    margin-top:0px;
+    text-align:start;
+    vertical-align:top;
+    
+    margin-left:10px;
+}
+.product_box {
+    text-align:center;
+    width:auto;
+    float:left;
+    min-height:150px;
+    margin-left:70px;
+    text-decoration:none;
+    /*border:1px dotted #dbdbdb;*/
+}
+.product_box1 {
+    text-align:center;
+    width:auto;
+    float:left;
+    min-height:150px;
+    margin-left:0px;
+    text-decoration:none;
+    margin-left:100px;
+    /*border:1px dotted #dbdbdb;*/
+}
+.product_box2 {
+    text-align:center;
+    width:auto;
+    float:left;
+    min-height:150px;
+    margin-left:50px;
+    text-decoration:none;
+    margin-left:100px;
+    /*border:1px dotted #dbdbdb;*/
+}
+.product_name2 {
+    font-weight:bold;
+    color:brown;
+    text-decoration:none;
+}
+.product_name1{
+    color:black;
+    font-size:22px;
+}
+.product_price {
+    
+    text-decoration:none;
+    font-size:15px;
+}
+.product_view1 {
+    text-decoration:none;
+}
+.pager {
+    width:400px;
+    clear:both;
+    margin:auto;
+}
+#Giua{
+    width:1260px;
+    min-height:500px;
+    margin-left:27px;
+}
+#abc{
+    width:1260px;
+    height:300px;
+}
+.noidung{
+    margin-bottom:10px;
+    padding:10px;
+    color:darkcyan;
+    border-style:dotted solid;
+}
+#searc{
+    width:1260px;
+    min-height:900px;
+    margin-left:95px;
+}
+.boder{
+    margin-bottom:10px;
+    padding:10px;
+    color:darkcyan;
+    border-style:dotted solid;
+}
+.detail{
+    width:1260px;
+    min-height:700px;
+}
+#searchh{
+    width:1260px;
+    min-height:1000px;
+    margin-left:100px;
+}
+
+#gh{
+    width:1000px;
+    min-height:700px;
+    margin-left:90px;
+}

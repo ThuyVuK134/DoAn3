@@ -1,0 +1,403 @@
+﻿<%@Master Language="C#" AutoEventWireup="true" CodeFile="HomeMasterPage.master.cs" Inherits="HomeMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head runat="server">
+    <meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Mỹ Phẩm</title> 
+
+<!-- Favicons Icon -->
+<link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<!--<link rel="stylesheet" href="css/animate.css" type="text/css">-->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/slider.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="Home.css" rel="stylesheet" />
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="cms-index-index">
+    <form id="form1" runat="server">
+    <div>
+        <div class="page"> 
+  <!-- Header -->
+            <header class="header-container">
+                <div class="header-top">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-xs-6"> 
+            
+                        <!-- Header Language -->
+                        <div class="dropdown block-language-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="images/english.png" alt="language"> English  </a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="images/english.png" alt="language"> English </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="images/francais.png" alt="language"> French </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="images/german.png" alt="language"> German </a></li>
+                          </ul>
+                        </div>
+            
+                        <!-- End Header Language --> 
+                        <!-- Header Currency -->
+                        <div class="dropdown block-currency-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-currency dropdown-toggle" href="#"> USD </a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> $ - Dollar </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> £ - Pound </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> € - Euro </a></li>
+                          </ul>
+                        </div>
+            
+                        <!-- End Header Currency -->
+                        <div class="welcome-msg hidden-xs"> Welcome to my website ! </div>
+                      </div>
+                      <div class="col-lg-7 col-md-7 col-xs-6"> 
+            
+                        <!-- Header Top Links -->
+                        <div class="toplinks">
+                          <div class="links">
+                            <div ><a title="My Account" href="login.html"><asp:Image ID="Image21" runat="server" ImageUrl="~/images/user.png" />My Account</a></div>
+                            <!-- End Header Company -->
+                            <div ><a href="Admin/login.aspx"><asp:Image ID="Image22" runat="server" ImageUrl="~/images/1495314897_91.png" />Login</a></div>
+                          </div>
+                        </div>
+                        <!-- End Header Top Links --> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+   
+                <div class="header container">
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-md-3"> 
+                      <!-- Header Logo -->
+                      <div class="logo"> <a title="Magento Commerce" href="Home.aspx"><img alt="Magento Commerce" src="images/logo.png"></a> </div>
+                      <!-- End Header Logo --> 
+                    </div>
+                    <div class="col-lg-9 ">
+                      <div class="top-cart-contain">
+                        <div class="mini-cart">
+
+                          <div data-hover="dropdown" class="basket dropdown-toggle" ><i class="fa fa-shopping-cart"></i><a href="#"> Shopping Cart (0)</a></div>
+                          <div>
+                            <div style="display: none;" class="top-cart-content arrow_box">
+                              <div class="block-subtitle">Giỏ hàng trống (0)</div>
+                              <%--<ul id="cart-sidebar" class="mini-products-list">
+                                <li class="item odd"> <a href="product_detail.html" title="SON THỎI AMOK KIDULT PICNIC LIPSTICK" class="product-image"><img src="images/Son/sonthoiamok.PNG" alt="SON THỎI AMOK KIDULT PICNIC LIPSTICK" width="55"></a>
+                                  <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="btn-remove1">Remove</a> 
+                                    <p class="product-name"><a href="product_detail.html">Son Thỏi Amok Kidult...</a> </p>
+                                    <strong>1</strong> x <span class="price">165.000VNĐ</span> </div>
+                                </li>
+                                <li class="item even"> <a href="product_detail.html" title="Sample Product" class="product-image"><img src="images/dau tay trang.PNG" alt="Sample Product" width="55"></a>
+                                  <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="btn-remove1">Remove This Item</a> <a class="btn-edit" title="Edit item" href="#">Edit item</a>
+                                    <p class="product-name"><a href="product_detail.html">Dầu tẩy trang</a> </p>
+                                    <strong>1</strong> x <span class="price">$230.00</span> </div>
+                                </li>
+                                <li class="item last odd"> <a href="product_detail.html" title="Sample Product" class="product-image"><img src="products-images/product5.jpg" alt="Sample Product" width="55"></a>
+                                  <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="btn-remove1">Remove This Item</a><a class="btn-edit" title="Edit item" href="#">Edit item</a>
+                                    <p class="product-name"><a href="product_detail.html">Sample Product</a> </p>
+                                    <strong>2</strong> x <span class="price">$420.00</span> </div>
+                                </li>
+                              </ul>
+                              <div class="top-subtotal">Subtotal: <span class="price">$520.00</span></div>
+                              <div class="actions">
+                                <button class="btn-checkout" ><span>Checkout</span></button>
+                                <button class="view-cart" ><span>View Cart</span></button>
+                              </div>--%>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="ajaxconfig_info" style="display:none"> <a href="#/"></a>
+                          <input value="" type="hidden">
+                          <input id="enable_module" value="1" type="hidden">
+                          <input class="effect_to_cart" value="1" type="hidden">
+                          <input class="title_shopping_cart" value="Go to shopping cart" type="hidden">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </header>
+              <!-- end header --> 
+              <!-- Navbar -->
+              <nav>
+                <div class="container">
+                  <div class="nav-inner"> 
+                    <ul id="nav" class="hidden-xs">
+                      <li id="nav-home" class="level0 parent drop-menu active"><a href="Home.aspx"><span>Home</span> </a></li>
+                      <li class="level0 parent drop-menu"><a href="NhaCungCap.aspx"><span>THƯƠNG HIỆU</span> </a>
+                        <ul style="display: none;" class="level1">
+                          <li class="level1 first"><a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC01"><span>3CE</span></a></li>
+                          <li class="level1 nav-10-2"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC02"> <span>The Face Shop</span> </a> </li>
+                          <li class="level1 nav-10-3"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC03"> <span>Skll</span> </a> </li>
+                          <li class="level1 nav-10-4"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC04"> <span>The Body Shop</span> </a> </li>
+                          <li class="level1 first parent"><a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC04"><span>Mac</span></a></li>
+                          <li class="level1 nav-10-4"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC05"> <span>Milani</span> </a> </li>
+                          <li class="level1"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC06"> <span>SkinFood</span> </a> </li>
+                            <li class="level1"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC07"> <span>The Body Shop</span> </a> </li>
+                            <li class="level1"> <a href="http://localhost:50652/NhaCungCap.aspx?ma=NCC08"> <span>Mother & Care</span> </a> </li>
+                        </ul>
+                      <li class="level0 nav-5 level-top first"> <a href="MaLoaiL01.aspx" class="level-top"> <span>TRANG ĐIỂM</span> </a>
+                        <div style="display: none; left: 0px;" class="level0-wrapper dropdown-6col">
+                          <div class="level0-wrapper2">
+                            <div class="nav-block nav-block-center">
+                              <ul class="level0">
+                                <li class="level1 nav-6-1 first parent item"> <a href="grid.html"> <span>Trang Điểm Môi </span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-6-1-1 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L01"> <span>Son Lì-Son Xăm-Son Bóng</span> </a> </li>
+                                    <li class="level2 nav-6-1-2"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L02"> <span>Son Thỏi</span> </a> </li>
+                                    <li class="level2 nav-6-1-2"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L03"> <span>Che Khuyết Điểm Môi</span> </a> </li>
+                                    <li class="level2 nav-6-1-3 last"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L04"> <span>Son Dưỡng -Tẩy Da Chết Môi</span> </a> </li>
+                                  </ul>
+                                </li>
+                                <li class="level1 nav-6-2 parent item"> <a href="grid.html"> <span>Trang Điểm Mắt</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-6-2-4 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L05"> <span>Dưỡng Dài Mi</span> </a> </li>
+                                    <li class="level2 nav-6-2-5"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L06"> <span>Kẻ Mắt , Chân Mày</span> </a> </li>
+                                    <li class="level2 nav-6-2-5"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L07"> <span>Phấn Mắt</span> </a> </li>
+                                    <li class="level2 nav-6-2-6 last"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L08"> <span>Mascara</span> </a> </li>
+                                  </ul>
+                                </li>
+                                <li class="level1 nav-6-3 parent item"> <a href="grid.html"> <span>Trang Điểm Mặt</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-6-3-9 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L09"> <span>CuShion</span> </a> </li>
+                                    <li class="level2 nav-6-3-10"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L10"> <span>Phấn Phủ , Phấn Nén</span> </a> </li>
+                                    <li class="level2 nav-6-3-11"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L11"> <span>Tẩy Trang</span> </a> </li>
+                                    <li class="level2 nav-6-3-12 last"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L12"> <span>Che Khuyết Điểm</span> </a> </li>
+                                    <li class="level2 nav-6-3-13 last"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L13"> <span>Kem Nền , Kem Lót</span> </a> </li>
+                                  </ul>
+                                </li>
+                                <li class="level1 nav-6-4 parent item"> <a href="grid.html"> <span>Dụng Cụ Trang Điểm</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-6-4-13 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L14"> <span>Cọ - Mút - Kẹp Mi</span> </a> </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="level0 nav-7 level-top parent"> <a href="MaLoaiL01.aspx" class="level-top"> <span>DƯỠNG DA</span> </a>
+                        <div style="display: none; left: 0px;" class="level0-wrapper dropdown-6col">
+                          <div class="level0-wrapper2">
+                            <div class="nav-block nav-block-center">
+                              <ul class="level0">
+                                <li class="level1 nav-7-1 first parent item"> <a href="grid.html"> <span>Các Vấn Đề Về Da</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-7-3-15 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L15"> <span>Dưỡng Cho Da Dầu</span> </a> </li>
+                                    <li class="level2 nav-7-3-16"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L16"> <span>Dưỡng Cho Da Hỗn Hợp</span> </a> </li>
+                                    <li class="level2 nav-7-3-17"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L17"> <span>Dưỡng Cho Da Nhảy Cảm</span> </a> </li>
+                                    <li class="level2 nav-7-3-18"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L18"> <span>Dưỡng Ẩm Sâu</span> </a> </li>
+                                  </ul>
+                                </li>
+                                <li class="level1 nav-7-3 parent item"> <a href="grid.html"> <span>Dưỡng Thể</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-7-3-15 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L19"> <span>Dụng Cụ Vệ Sinh Da</span> </a> </li>
+                                    <li class="level2 nav-7-3-16"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L20"> <span>Kem Tẩy Lông</span> </a> </li>
+                                    <li class="level2 nav-7-3-17"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L21"> <span>Tẩy Da Chết Toàn Thân Body</span> </a> </li>
+                                    <li class="level2 nav-7-3-18"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L22"> <span>Kem Chống Nắng Body</span> </a> </li>
+                                    <li class="level2 nav-7-3-19 last"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L23"> <span>Sữa Tắm Body Wash</span> </a> </li>
+                                  </ul>
+                                </li>
+                                <li class="level1 nav-7-3 parent item"> <a href="grid.html"> <span>Dưỡng Tóc</span> </a>
+                                  <ul class="level1">
+                                    <li class="level2 nav-7-3-15 first"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L24"> <span>Ủ Tóc - Nhuộm Tóc</span> </a> </li>
+                                    <li class="level2 nav-7-3-16"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L25"> <span>Dầu Gội - Làm Sạch Tóc</span> </a> </li>
+                                    <li class="level2 nav-7-3-17"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L26"> <span>Tinh Chất Dưỡng Tóc-Nuôi Dưỡng Tóc</span> </a> </li>
+                                    <li class="level2 nav-7-3-18"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L27"> <span>Dưỡng Mi</span> </a> </li>
+                                      <li class="level2 nav-7-3-19"> <a href="http://localhost:50652/MaLoaiL01.aspx?ma=L28"> <span>Chăm Sóc Body</span> </a> </li>
+                                  </ul>
+                                </li> 
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="level0 nav-7 level-top"> <a href="grid.html" class="level-top"> <span>NƯỚC HOA</span> </a> </li>
+                      <li class="level0 nav-8 level-top"> <a href="grid.html" class="level-top"> <span>TIN TỨC</span> </a> </li>
+                      <li class="level0 nav-8 level-top"> <a href="grid.html" class="level-top"> <span>KHUYẾN MẠI</span> </a> </li>
+                    <li class="level0 parent drop-menu"><a href="NhaCungCap.aspx"><span>GIỚI THIỆU</span> </a>
+                          <li class="level0 parent drop-menu"><a href="Search.aspx"><span>TÌM KIẾM</span> </a>
+                          </ul>
+                    <!-- Search-col -->
+                    <%--<div class="search-box" style="padding:7px 0px 0px 0px">
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:Button ID="Button1" runat="server" Text="Tìm Kiếm" />
+                      
+                    </div>--%>
+                    <!-- End Search-col --> 
+                  </div>
+                </div>
+              </nav>
+              <!-- end nav --> 
+  
+              <!-- Slider -->
+              <section class="slider-intro">
+                <div class="container">
+                  <div class="the-slideshow slideshow-wrapper">
+                    <ul style="overflow: hidden;" class="slideshow">
+                      <li class="slide">
+                        <p><a href="#"> <img src="images/banner-img.jpg" alt=""></a></p>
+                        <div class="caption light1 top-right">
+                          <div class="caption-inner">
+                            <p class="heading">Collection for beautiful women 2017</p>
+                            <%--<div class="badge"><em>up to</em> 70% <span>OFF</span></div>--%>
+                            <%--<p class="heading1">Lorem Ipsum is simply dummy text of the printing and typesetting industry  it has been the industry's standard dummy</p>--%>
+                            <p class="intro-btn"><a  href="#" title="Click to see all features">Shop Now</a> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="slide">
+                        <p><a href="#"> <img src="images/banner-img1.jpg" alt=""></a></p>
+                        <div class="caption light top-right">
+                          <div class="caption-inner">
+                            <p class="normal-text">Collection 2017</p>
+                            <h2 class="heading permanent">You like this theme</h2> <%--Bạn thích chủ đề này ?--%>
+                            <p class="normal-text1">tristique senectus </p> <%--Hãy sống hết mk ( về già là buồn)--%>
+                            <p class="intro-btn"><a  href="#" title="Click to see all features">Buy Now</a> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="slide">
+                        <p><a title="#" href="#"> <img src="images/anhbia3.jpg" alt="" height="500px"> </a></p>
+                        <div class="caption light2 top-right">
+                          <div class="caption-inner">
+                            <p class="heading">Mỹ Phẩm Lệ Thủy</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="#" id="home-slides-prev" class="backward browse-button">previous</a> <a href="#" id="home-slides-next" class="forward browse-button">next</a>
+                    <div id="home-slides-pager" class="tab-pager tab-pager-img tab-pager-ring-lgray"></div>
+                  </div>
+                </div>
+              </section>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer class="footer">
+            <div class="footer-middle">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-logo"><a href="index.html" title="Logo"><img src="images/logo.png" alt="logo"></a></div>
+                    <address>
+                    <asp:Image ID="Image18" runat="server" ImageUrl="~/images/map.png" /> Địa chỉ : Số 183, Nguyễn Lương Bằng , Thanh Bình , Hải Dương <br>
+                    </address>
+                    <div class="phone-footer"><asp:Image ID="Image19" runat="server" ImageUrl="~/images/phone.png" /> SDT : 01688270715 </div>
+                    <div class="email-footer"><asp:Image ID="Image20" runat="server" ImageUrl="~/images/1495314938_icons_email.png" /> <a href="mailto:support@magikcommerce.com">vuthithuy711997@gmail.com</a> </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <h4>Hỗ Trợ Khách Hàng</h4>
+                    <ul class="links">
+                      <li class="first"><a href="#" title="How to buy">Hướng dẫn mua hàng </a></li>
+                      <li><a href="faq.html" title="FAQs">Chính sách giao hàng</a></li>
+                      <li><a href="#" title="Payment">Thanh toán an toàn</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <h4>Tài Khoản</h4>
+                    <ul class="links">
+                      <li class="first"><a href="#" title="Your Account">Tài Khoản</a></li>
+                      <li><a href="#" title="Information">Thông báo</a></li>
+                      <li><a href="#" title="Addresses">Đơn hàng</a></li>
+                      <li><a href="#" title="Addresses">Yêu thích</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+                    <h4>Thông Tin</h4>
+                    <ul class="links">
+                      <li class="first"><a href="sitemap.html" title="Site Map">Hướng dẫn</a></li>
+                      <li><a href="#/" title="Search Terms">Thỏa thuận người dùng</a></li>
+                      <li><a href="#" title="Advanced Search">Chính sách riêng tư</a></li>
+                      <li><a href="contact_us.html" title="Contact Us">Điều khoản & điền kiện</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-8 col-sm-9 col-xs-12">
+                    <div class="block-subscribe">
+                      <h4>Đăng nhập bằng Email</h4>
+                      <div class="newsletter">
+                        <form>
+                          <input type="text" placeholder="Enter your email" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter1" name="email">
+                          <button class="subscribe" title="Subscribe" type="submit"><span>Submit</span></button>
+                        </form>
+                      </div>
+                    </div>
+                    <%--<div class="social">
+                      <h4>Follow Us</h4>
+                      <ul>
+                        <li class="fb"><a href="#"><asp:Image ID="Image21" runat="server" /></a></li>
+                        <li class="tw"><a href="#"></a></li>
+                        <li class="googleplus"><a href="#"></a></li>
+                        <li class="rss"><a href="#"></a></li>
+                        <li class="pintrest"><a href="#"></a></li>
+                        <li class="linkedin"><a href="#"></a></li>
+                        <li class="youtube"><a href="#"></a></li>
+                      </ul>
+                    </div>--%>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4 col-xs-12 coppyright"> &copy; 2017 Vũ Thị Thủy _ vuthithuy711997@gmail.com</div>
+                  <%--<div class="col-sm-8 col-xs-12 company-links">
+                    <ul class="links">
+                      <li><a href="#" title="Magento Themes">Magento Themes</a></li>
+                      <li><a href="#" title="Premium Themes">Premium Themes</a></li>
+                      <li><a href="#" title="Responsive Themes">Responsive Themes</a></li>
+                      <li class="last"><a href="#" title="Magento Extensions">Magento Extensions</a></li>
+                    </ul>
+                  </div>--%>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- End Footer --> 
+  
+        </div>
+
+
+
+        <!-- JavaScript --> 
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="js/parallax.js"></script> 
+        <script type="text/javascript" src="js/common.js"></script> 
+        <script type="text/javascript" src="js/slider.js"></script> 
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+        <script type="text/javascript">
+            //<![CDATA[
+	        jQuery(function() {
+		        jQuery(".slideshow").cycle({
+			        fx: 'scrollHorz', easing: 'easeInOutCubic', timeout: 10000, speedOut: 800, speedIn: 800, sync: 1, pause: 1, fit: 0, 			pager: '#home-slides-pager',
+			        prev: '#home-slides-prev',
+			        next: '#home-slides-next'
+		        });
+	        });
+            //]]>
+            </script>
+    </div>
+    </form>
+</body>
+</html>
